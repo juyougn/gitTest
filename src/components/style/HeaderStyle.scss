@@ -4,11 +4,15 @@
    left: 50%;
    transform: translate(-50%);
    display: flex;
-   background-color: rgba(0, 0, 0, 0.4);
+   background-color: whitesmoke;
   //  backdrop-filter: blur(3px);
    z-index: 100;
    padding: 0 40px;
    width: 100%;
+   color: black;
+   a {
+    color: #000;
+   }
  
    @media (max-width: 768px) {
      padding: 0;
@@ -68,4 +72,58 @@
   @media (max-width: 768px) {
     height: 50px;
   }
+}
+.Ul {
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  h1{
+    font-size: 20px;
+  }
+}
+
+.Li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.AStyle {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.AStyle:hover {
+  color: rgb(38, 129, 73);
+}
+
+.active .AStyle {
+  color:rgb(38, 129, 73);
+}
+/* 추가된 스타일 */
+.menu-item {
+  position: relative; /* 부모 요소에 대해 상대적인 위치 설정 */
+}
+
+.submenu {
+  background-color: #fff;
+  
+  // width: 200px;
+  display: none;
+  position: absolute;
+  top: 100%; /* 부모 요소의 하단에 위치하도록 설정 */
+  left: 0; /* 부모 요소의 좌측에 위치하도록 설정 */
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+/* 마우스를 올렸을 때 메뉴를 보이도록 설정 */
+.menu-item:hover .submenu {
+  display: block;
+  width: 100%;
+  background: #fff;
+  text-decoration: none;
 }
