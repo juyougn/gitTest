@@ -18,6 +18,7 @@ function HomeList() {
     <div className='GameListTop'>
       
     <h3 style={{color:"white", textAlign:"center", fontSize:"2em"}}>Trailer</h3>
+    <img src="./img/logo/img0101.png" alt="" style={{width:"100%"}}/>
     <Swiper
       slidesPerView={1}
       navigation={true} modules={[Navigation]} className='mb-5'
@@ -30,16 +31,9 @@ function HomeList() {
     </Swiper>
     <div className='Br'/>
 
-    <div className='DF' style={{}}></div>
-    <h3 style={{color:"white", textAlign:"center", fontSize:"20px"}}>추천병종</h3>
-    <br />
-    <p className='P'>1티어</p>
-    <img src="./img/home/home1.png" alt="" className='IMG1' />
-    <br />
-    <p className='P'>1.5티어</p>
-    <img src="./img/home/home2.png" alt="" className='IMG1' />
       
       <div>
+        <QnA/>
       <div className='Br'/>
         <QnA/>
 
