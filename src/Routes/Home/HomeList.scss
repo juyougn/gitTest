@@ -1,0 +1,39 @@
+// 홈 메뉴 바 
+.GameListTop{
+    padding-top: 100px;
+   
+    
+}
+h3{
+padding-top: 25px;
+margin: 0px;    
+}
+// 밑줄 정리
+.Br {
+    padding-top: 25px;
+    border-bottom: 2px solid white;
+    padding-bottom: 25px;
+    
+    
+}
+.DF {
+    display: flex;
+}
+
+    .P {
+        // display: flex;
+        display: block;
+        color: white;
+        text-align: center;
+        margin: 0;
+        
+    }
+
+    .IMG1 {
+        display: flex; /* 추가 */
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; /* 추가 */
+        max-height: 100%; /* 추가 */
+        margin: auto; /* 추가 */
+    }
