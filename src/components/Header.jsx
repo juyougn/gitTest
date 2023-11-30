@@ -1,4 +1,4 @@
-import { Link, useLocation  } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import './style/HeaderStyle.scss'
 import { useEffect, useState } from "react";
 
@@ -30,48 +30,48 @@ function Header() {
 
   return (
     <div className="HeaderContainer"  >
-     
-      <ul className="Ul" style={{display:"flex", justifyContent:""}} >
-        
-           
-              <img className="IMG" src="./img/logo/1img.webp" alt="" />
-            
-         
-        
 
-        
-          <li className={`Li ${activeTab === '홈' ? 'active' : ''}`}>
-            <Link to="/" className="AStyle" onClick={() => handleClick('홈')}>
-              홈
-            </Link>
-          </li>
-          <li className={`Li ${activeTab === '그룹소개' ? 'active' : ''}`}>
-            <Link to="/list" className="AStyle" onClick={() => handleClick('그룹소개')}>
-              그룹소개
-            </Link>
-          </li>
-          <li className={`Li ${activeTab === '기업지배구조' ? 'active' : ''}`}>
-            <Link to="/map" className="AStyle" onClick={() => handleClick('기업지배구조')}>
-              기업지배구조
-            </Link>
-          </li>
-          
-          <li className={`Li ${activeTab === 'ESG경영' ? 'active' : ''}`}>
-            <Link to="/test1" className="AStyle" onClick={() => handleClick('ESG경영')}>
-              ESG경영
-            </Link>
-          </li>
-          <li className={`Li ${activeTab === '투자정보' ? 'active' : ''}`}>
-            <Link to="/test2" className="AStyle" onClick={() => handleClick('투자정보')}>
+      <ul className="Ul" style={{ display: "flex", justifyContent: "" }} >
+
+
+        <img className="IMG" src="./img/logo/1img.webp" alt="" />
+
+
+
+
+
+        <li className={`Li ${activeTab === '홈' ? 'active' : ''}`}>
+          <Link to="/" className="AStyle" onClick={() => handleClick('홈')}>
+            홈
+          </Link>
+        </li>
+        <li className={`Li ${activeTab === '그룹소개' ? 'active' : ''}`}>
+          <Link to="/list" className="AStyle" onClick={() => handleClick('그룹소개')}>
+            그룹소개
+          </Link>
+        </li>
+        <li className={`Li ${activeTab === '기업지배구조' ? 'active' : ''}`}>
+          <Link to="/map" className="AStyle" onClick={() => handleClick('기업지배구조')}>
+            기업지배구조
+          </Link>
+        </li>
+
+        <li className={`Li ${activeTab === 'ESG경영' ? 'active' : ''}`}>
+          <Link to="/test1" className="AStyle" onClick={() => handleClick('ESG경영')}>
+            ESG경영
+          </Link>
+        </li>
+        <li className={`Li ${activeTab === '투자정보' ? 'active' : ''}`}>
+          <Link to="/test2" className="AStyle" onClick={() => handleClick('투자정보')}>
             투자정보
-            </Link>
-          </li>
-          <li className={`Li ${activeTab === 'PR센터' ? 'active' : ''}`}>
-            <Link to="/test3" className="AStyle" onClick={() => handleClick('PR센터')}>
+          </Link>
+        </li>
+        <li className={`Li ${activeTab === 'PR센터' ? 'active' : ''}`}>
+          <Link to="/test3" className="AStyle" onClick={() => handleClick('PR센터')}>
             PR센터
-            </Link>
-          </li>
-      
+          </Link>
+        </li>
+
 
 
       </ul>

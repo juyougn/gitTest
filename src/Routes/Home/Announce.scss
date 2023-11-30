@@ -1,0 +1,102 @@
+.announceContainer{
+    width: 1280px;
+    color: white;
+    display: flex;
+    .announceCompony {
+        width: 600px;
+        .announceComponyTitle{
+            width: 540px;
+            height: 42px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .announceManagement {
+        width: 600px;
+        .announceManagementTitle{
+            width: 580px;
+            height: 42px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .announceContentWrap {
+        width: 540px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .announceTextWrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+    }
+
+}
+
+
+
+$spacing-values: ();
+@for $i from 0 through 1500 {
+    $spacing-values: append($spacing-values, $i);
+}
+// margin 0~1500의 값
+@each $value in $spacing-values {
+    .c-mt#{$value} {margin-top: #{$value}px;}
+    .c-mb#{$value} {margin-bottom: #{$value}px;}
+    .c-ms#{$value} {margin-left: #{$value}px;}
+    .c-me#{$value} {margin-right: #{$value}px;}
+    .c-mx#{$value} {margin-left: #{$value}px; margin-right: #{$value}px;}
+    .c-my#{$value} {margin-top: #{$value}px; margin-bottom: #{$value}px;}
+    .c-m#{$value} {margin: #{$value}px;}
+}
+// padding 0~1500의 값
+@each $value in $spacing-values {
+    .c-pt#{$value} {padding-top: #{$value}px;}
+    .c-pb#{$value} {padding-bottom: #{$value}px;}
+    .c-ps#{$value} {padding-left: #{$value}px;}
+    .c-pe#{$value} {padding-right: #{$value}px;}
+    .c-px#{$value} {padding-left: #{$value}px; padding-right: #{$value}px;}
+    .c-p#{$value} {padding: #{$value}px;}
+}
+
+// font-size 0~1500의 값
+@each $value in $spacing-values {
+    .c-fs#{$value} {font-size: #{$value}px;}
+}
+
+
+@mixin font-face($weight, $file-path) {
+    @font-face {font-family: 'Pretendard'; font-weight: $weight; font-style: normal; font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/' + $file-path + '.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/' + $file-path + '.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/' + $file-path + '.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/' + $file-path + '.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/' + $file-path + '.ttf') format('truetype');
+}}
+@include font-face(100, 'Pretendard-Thin');
+@include font-face(200, 'Pretendard-ExtraLight');
+@include font-face(300, 'Pretendard-Light');
+@include font-face(400, 'Pretendard-Regular');
+@include font-face(500, 'Pretendard-Medium');
+@include font-face(600, 'Pretendard-SemiBold');
+@include font-face(700, 'Pretendard-Bold');
+@include font-face(800, 'Pretendard-ExtraBold');
+@include font-face(900, 'Pretendard-Black');
+
+.Pretendard-Thin, .Pretendard-Regular, .Pretendard-ExtraLight, .Pretendard-Light, .Pretendard-Medium, .Pretendard-SemiBold, .Pretendard-Bold, .Pretendard-ExtraBold, .Pretendard-Black {
+    font-family: 'Pretendard';
+}
+
+.Pretendard-Thin { font-weight: 100; }
+.Pretendard-ExtraLight { font-weight: 200; }
+.Pretendard-Light { font-weight: 300; }
+.Pretendard-Regular { font-weight: 400; }
+.Pretendard-Medium { font-weight: 500; }
+.Pretendard-SemiBold { font-weight: 600; }
+.Pretendard-Bold { font-weight: 700; }
+.Pretendard-ExtraBold { font-weight: 800; }
+.Pretendard-Black { font-weight: 900; }
